@@ -30,6 +30,11 @@ print('connected to mongodb!, welcome to mongodb connection, have a fun')
 import pandas as pd
 import cPickle as pickle
 
+data = pd.read_csv('d1_test.csv', header=None, names=['col1', 'col2', 'col3', 'col4', 'col5', 'col6'])
+print('\n')
+print data
+
+
 ###----Regression Code Ends------###
 
 # VCAP_SERVICES mapping END
