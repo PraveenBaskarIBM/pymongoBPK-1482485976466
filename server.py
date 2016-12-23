@@ -26,6 +26,11 @@ client = MongoClient(mongodb_url)
 db = client.get_default_database()  
 print('connected to mongodb!, welcome to mongodb connection, have a fun') 
 
+###----Regression Code begins------###
+import pandas as pd
+
+###----Regression Code Ends------###
+
 # VCAP_SERVICES mapping END
 
 httpd = Server(("", PORT), Handler)
