@@ -31,8 +31,10 @@ import pandas as pd
 import cPickle as pickle
 
 data = pd.read_csv('d1_test.csv', header=None, names=['col1', 'col2', 'col3', 'col4', 'col5', 'col6'])
-print('\n')
 print data
+print('\n')
+with open('test3_model.pkl', 'rb') as f:
+  classifier = pickle.load(f)
 
 
 ###----Regression Code Ends------###
