@@ -29,6 +29,7 @@ print('connected to mongodb!, welcome to mongodb connection, have a fun')
 ###----Regression Code begins------###
 import pandas as pd
 import cPickle as pickle
+import sklearn
 
 data = pd.read_csv('d1_test.csv', header=None, names=['Col1', 'Col2', 'Col3', 'Col4', 'Col5', 'Col6'])
 print data
