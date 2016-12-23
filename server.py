@@ -40,18 +40,6 @@ del data['Col1']
 predicted_set = classifier.predict(data)
 prob_predicted = classifier.predict_proba(data)
 
-data = pd.DataFrame(data, columns=["Col1", "Col2", "Col3", "Col4", "Col5", "Col6"])
-pred = pd.DataFrame(predicted_set, columns=["Col7"])
-df_prob = pd.DataFrame(prob_predicted, columns=["Col8", "col9"])
-
-frame1 = [data,pred]
-df1 = pd.concat(frame1,axis=1, join_axes=[data.index])
-frame2 = [df1,df_prob]
-df2 = pd.concat(frame2,axis=1, join_axes=[data.index])
-
-df2['Col10'] = df2['Col9'].map(lambda x: 'Low' if x < 0.5 else 'Medium' if x < 0.75 else 'High')
-del df2['Col1']
-print df2
 
 
 ###----Regression Code Ends------###
