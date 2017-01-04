@@ -1,7 +1,4 @@
 pymongo
 pandas
-sklearn
-scipy
-numpy
-getopt
+
                                                                                                                                                                                                                                                                                                                                                                                                                 
