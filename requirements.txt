@@ -4,5 +4,3 @@ sklearn
 scipy
 numpy
 sys
-getopt
-pprint
